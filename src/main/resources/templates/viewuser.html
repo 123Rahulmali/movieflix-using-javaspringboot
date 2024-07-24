@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+    body {
+        background-color: black; /* Set background color of the body */
+        color: white; /* Set text color for the body */
+        font-family: Arial, sans-serif; /* Example font-family */
+    }
+    
+    h2 {
+        color: red; /* Set text color for h2 */
+    }
+    
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    
+    table, th, td {
+        border: 1px solid white; /* Set border color and style */
+    }
+    
+    th, td {
+        padding: 10px; /* Set padding inside cells */
+        text-align: left; /* Align text inside cells */
+    }
+    
+    th {
+        background-color: black; /* Set background color for table headers */
+    }
+    
+    td {
+        background-color: #333; /* Set background color for table cells */
+    }
+</style>
+</head>
+<body>
+	<h2>All Movies</h2>
+	<table border="1">
+		<thead>
+			<tr>
+				<td>name</td>
+				<td>email</td>
+				<td>phone</td>
+				<td>gender</td>
+				<td>address</td>
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:each="user : ${user}">
+				<td th:text="${user.name}"></td>
+				<td th:text="${user.email}"></td>
+				<td th:text="${user.phone}"></td>
+				<td th:text="${user.gender}"></td>
+				<td th:text="${user.address}"></td>
+			</tr>
+		</tbody>
+	</table>
+
+</body>
+</html>

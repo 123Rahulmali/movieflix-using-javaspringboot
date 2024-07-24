@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+    body {
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        background-color: #141414;
+        color: #fff;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        height: 100vh;
+    }
+    form {
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 30px;
+        border-radius: 10px;
+        width: 400px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        margin-top: 20px; /* Adjust top margin as needed */
+    }
+    h2 {
+        text-align: center;
+        font-size: 32px;
+        margin-bottom: 20px;
+        margin-top: 50px; 
+        color:red;/* Adjust top margin to move h2 to the top */
+    }
+    label {
+        display: block;
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="number"],
+    textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: none;
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 5px;
+        color: #fff;
+        font-size: 16px;
+    }
+    input[type="radio"] {
+        margin-right: 5px;
+        vertical-align: middle;
+    }
+    textarea {
+        resize: none;
+        height: 100px;
+    }
+    input[type="submit"] {
+        padding: 15px 0;
+        background-color: #e50914;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 18px;
+        width: 100%;
+        transition: background-color 0.3s ease;
+    }
+    input[type="submit"]:hover {
+        background-color: #ff0a16;
+    }
+</style>
+
+</head>
+<body>
+	<h2> REGISTER HERE :</h2>
+<form action="register" method="post">
+<label>Name:</label>
+<input type="text" name="name">
+<br/><br/>
+<label>Email:</label>
+<input type="email" name="email">
+<br/><br/>
+<label>Password:</label>
+<input type="password" name="password">
+<br/><br/>
+<label>Phone Number:</label>
+<input type="number" name="phone">
+<br/><br/>
+<label>Gender:</label>
+M<input type="radio" name="gender" value="male">
+F<input type="radio" name="gender" value="female">
+O<input type="radio" name="gender" value="other">
+<br/><br/>
+<label>Address:</label>
+<textarea name="address"></textarea>
+<br/><br/>
+<input type="submit" value="REGISTER"/>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+    body {
+        background-color: black;
+        color: white; /* Ensure text is readable on black background */
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+    }
+    h2 {
+        color: red; /* Make the heading red */
+        margin-bottom: 40px;
+    }
+    form, a {
+        margin: 20px 0;
+    }
+    input[type="submit"] {
+        padding: 15px 30px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+    }
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+</style>
+</head>
+<body>
+<h2>Welcome Admin</h2>
+
+<form action="viewuser">
+<input type="submit" value="View Users">
+</form>
+
+
+<form action="map-addmovie">
+<input type="submit" value="Add Movie"/>
+</form>
+
+<a href="viewmovie">
+<input type="submit" value="View Movies"/>
+</a>
+
+</body>
+</html>
