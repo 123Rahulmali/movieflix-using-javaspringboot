@@ -1,1 +1,1 @@
-# movieflix-using-javaspringboot
+# MovieFlix web application using Java SpringBoot
